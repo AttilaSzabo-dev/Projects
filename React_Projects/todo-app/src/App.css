@@ -35,7 +35,7 @@ body {
   width: 90%;
 }
 
-p {
+.title {
   display: inline-block;
   color: var(--black-1);
   font-size: 4rem;
@@ -129,6 +129,26 @@ p {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+.todo-text {
+  color: var(--black-2);
+  font-size: 1.4rem;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.todo-text.completed {
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+.todo-time {
+  color: var(--black-2);
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: -0.2rem;
 }
 
 .todo-actions {
